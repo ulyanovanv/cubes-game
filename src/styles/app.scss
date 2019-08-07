@@ -1,0 +1,23 @@
+.app {
+  &_gradient {
+    background: linear-gradient(45deg, black, transparent);
+  }
+
+  &_b-color {
+    background-color: $black;
+  }
+}
+
+// colored texts
+$list: (
+        'red': $red,
+        'yellow': $yellow,
+        'green': $green,
+        'blue': $blue
+);
+
+@each $key, $color in $list {
+  .text-#{$key} {
+    color: #{$color};
+  }
+}

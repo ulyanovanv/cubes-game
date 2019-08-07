@@ -1,7 +1,6 @@
 import React from 'react';
 
 let NoMatch = ({ location }) => {
-  console.log(location);
   return (
     <div>
       <h3>
